@@ -9,13 +9,17 @@ from aiogram.types.callback_query import CallbackQuery
 
 
 
-@dp.message_handler(commands=['start'])
-async def StartCommand(message: types.Message):
-    await Start(message=message)
+# @dp.message_handler(commands=['start'])
+# async def StartCommand(message: types.Message):
+#     await Start(message=message)
+
+# @dp.message_handler()
+# async def Nocommand(message:types.Message):
+#         await message.answer("команда не распознана")                    
 
 @dp.message_handler()
-async def Nocommand(message:types.Message):
-        await message.answer("команда не распознана")                    
+async def mes(message: types.Message):
+        await message.answer(message.text)
 
 if __name__ == '__main__':
         executor.start_polling(dp, skip_updates=True)

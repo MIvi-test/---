@@ -51,7 +51,7 @@ class ModelConnect():
             self.session.commit()
     def AllData(self):
         try:
-            print(OLDbalance = self.session.query(User).all())
+            print(self.session.query(User).all())
         except:
             pass
         finally:

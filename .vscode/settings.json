@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 8000,
+            "driver": "PostgreSQL",
+            "name": "kazino",
+            "username": "postgres",
+            "database": "sqlalchemy_tuts",
+            "password": "1122banforChild_"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 8000,
+            "driver": "PostgreSQL",
+            "name": "testing",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "1122banforChild_"
+        }
+    ]
+}
